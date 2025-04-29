@@ -1,17 +1,25 @@
 fx_version 'bodacious'
-
 game 'rdr3'
+lua54 'yes'
+
+description 'Unique Stores with Enhanced Security'
+version '1.0'
+author 'Heraclid'
 
 rdr3_warning 'I acknowledge that this is a prerelease build of RedM, and I am aware my resources *will* become incompatible once RedM ships.'
+
+shared_scripts {
+  'config.lua'
+}
 
 client_scripts {
   'client.lua'
 }
 
 server_scripts {
-  '@mysql-async/lib/MySQL.lua',
-  'server.lua',
+  'server.lua'
 }
+
 
 ui_page 'html/index.html'
 
